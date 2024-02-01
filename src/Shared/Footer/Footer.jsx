@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <div>
- <footer className="footer p-10 pt-10  md:pt-32  pl-20 md:pl-10 bg-black text-white">
+ <footer className="footer p-10   md:pt-32  pl-20 md:pl-10 bg-black text-white">
             <aside className="-mt-6">
                 <div className="flex gap-1 items-center">
                 <img className="w-16" src="https://i.ibb.co/DDfshgW/m-removebg-preview.png" alt="" />
@@ -13,6 +13,17 @@ const Footer = () => {
                 <p>Copyright © 2023 - All right reserved by SCC MovieBea</p>
             </aside>
 
+            <nav>
+                <header className="footer-title text-center  ">Movie Category</header>
+                
+                    <a className="link link-hover" href="/about">English</a>
+                    <a className="link link-hover" href="/review">China</a>
+                    <a className="link link-hover" href="/review">Hindi</a>
+                    <a className="link link-hover" href="/review">Korean</a>
+                    <a className="link link-hover" href="/review">Upcoming Movies</a>
+              
+
+            </nav>
             <nav>
                 <header className="footer-title text-center ml-10 ">Company</header>
                 <div className="flex gap-10 items-center justify-center">
