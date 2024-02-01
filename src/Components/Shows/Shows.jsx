@@ -13,7 +13,7 @@ const Shows = () => {
     return (
         <div>
             <SectionTitle heading = {"Shows"}></SectionTitle>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
                 {
                     allShow.map(show =>
                        <Show

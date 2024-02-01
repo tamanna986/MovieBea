@@ -6,20 +6,33 @@ const Show = ({ show }) => {
         language,
         genres,
         schedule: { time, days },
-        image
+        image,
+        runtime
       } = show;
       const imageUrl = image && image.original ? image.original : null;
     
     return (
-        <div>
-            <h1>{show.name}</h1>
+        <div className="mb-10">
+            
             <div className="card h-96  shadow-xl image-full">
                 <figure> {imageUrl && <img className="w-80 h-96" src={imageUrl} alt={`${name} Poster`} />}</figure>
-                <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-primary">Buy Now</button>
+                
+                <div className="card-body h-96">
+                {
+                     runtime ? (
+                        <div className="bg-back px-10 text-white badge badge-outline ml-16">
+                          {runtime} Minutes
+                        </div>
+                      ) : null
+                }
+                    <div className="mt-6">
+                    <h2 className="font-bold text-3xl flex items-center justify-center">{name}</h2>
+                    <p>Genres : {genres.join(", ")}</p>
+                    <p>Type: {type}</p>
+                    </div>
+                    <p>{time ? ` Schedule: ${time} on ${days.join(", ")}` : null}</p>
+                    <div>
+                        <button className="btn bg-green-700 px-6  -ml-8 mt-28 text-white rounded-r-3xl border-0">Details</button>
                     </div>
                 </div>
             </div>
