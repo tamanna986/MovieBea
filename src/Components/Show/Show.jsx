@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Show = ({ show }) => {
     const {
         url,
@@ -7,7 +9,8 @@ const Show = ({ show }) => {
         genres,
         schedule: { time, days },
         image,
-        runtime
+        runtime,
+        id
       } = show;
       const imageUrl = image && image.original ? image.original : null;
     
@@ -32,7 +35,7 @@ const Show = ({ show }) => {
                     </div>
                     <p>{time ? ` Schedule: ${time} on ${days.join(", ")}` : null}</p>
                     <div>
-                        <button className="btn bg-green-700 px-6  -ml-8 mt-28 text-white rounded-r-3xl border-0">Details</button>
+                        <Link to = {`/show/${id}`}><button className="btn bg-green-700 px-6  -ml-8 mt-28 text-white rounded-r-3xl border-0">Details</button></Link>
                     </div>
                 </div>
             </div>

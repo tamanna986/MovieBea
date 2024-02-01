@@ -8,6 +8,7 @@ import {
 import Root from './LayOut/Root';
 import ErrorPage from './Pages/Home/ErrorPage/ErrorPage';
 import Home from './Pages/Home/Home';
+import ShowDetails from './Pages/Home/ShowDetails/ShowDetails';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
-      }
+      },
+      {
+        path:"/show/:id",
+        element:<ShowDetails></ShowDetails>
+        
+      },
     ]
   },
 ]);
