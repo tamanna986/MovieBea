@@ -9,7 +9,7 @@ const Navbar = () => {
 
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 border-b-2 border-green-900 ">
             <div className="navbar-start">
                 <ul className="menu menu-horizontal px-1">
 
