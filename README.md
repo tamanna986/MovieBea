@@ -1,8 +1,7 @@
-# React + Vite
+# Movie Ticket Booking
+###Project Name : MovieBea
+Live Site: https://65bb83beb7f89f726503061a--dancing-fenglisu-d7b0cd.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Feature:
+Here anyone can click on detail and go to the details page of the show. and see the details. And by clicking book ticket button it will open a form.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
